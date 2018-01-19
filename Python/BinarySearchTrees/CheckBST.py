@@ -1,10 +1,8 @@
-""" Node is defined as
-class node:
-    def __init__(self, data):
+class node():
+    def __init__(self,data):
         self.data = data
         self.left = None
         self.right = None
-"""
 
 def checkBST(root):
     '''
@@ -33,4 +31,29 @@ def checkBST(root):
         else:
             return False
     return True
-        
+
+''' 
+TEST CASES
+
+#create test tree 1:
+root = node(5)
+a,b = node(3), node(7)
+root.left, root.right = a,b
+c,d = node(1), node(4)
+a.left, a.right = c,d
+e,f = node(6), node(9)
+b.left, b.right = e,f
+
+print(checkBST(root))
+
+#create test tree 2:
+root = node(5)
+a,b = node(3), node(7)
+root.left, root.right = a,b
+c,d = node(1), node(4)
+a.left, a.right = c,d
+e,f = node(6), node(2)
+b.left, b.right = e,f
+
+print(checkBST(root))
+'''
