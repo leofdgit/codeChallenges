@@ -68,7 +68,7 @@ class MinHeap():
         else:
             return False
 '''
-Test Heap.
+#Test Heap.
 M = MinHeap()
 M.addNode(2)
 M.addNode(3)
