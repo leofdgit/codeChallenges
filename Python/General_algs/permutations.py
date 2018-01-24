@@ -19,5 +19,5 @@ def permutations(array):
                 
 '''
 Test.
-print(permutations([1,2,3,4,5,6,7])
+#print(permutations([1,2,3,4,5,6,7])
 '''
