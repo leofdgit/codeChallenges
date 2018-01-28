@@ -1,3 +1,13 @@
+class UGraph():
+  '''
+  Class for an undirected graph without edge weights.
+  '''
+    def __init__(self):
+        self.neighbours = defaultdict(list)
+    def addNeighbours(self,a,b):
+        self.neighbours[a].append(b)
+        self.neighbours[b].append(a)
+
 def dfs(ug,start):
   '''
   ug is an undirected graph whose edges do not have associated edges.
