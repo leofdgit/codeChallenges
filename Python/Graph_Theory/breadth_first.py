@@ -24,7 +24,30 @@ def bfs(ug,start):
             if n not in visited:
                 queue.append(n)
     return visited
-    
+   
+ 
+def bfs_p(ug,start,end):
+  '''
+  Like bfs except this finds unique paths from the start node to the end node.
+  '''
+    queue = [start]
+    paths = []
+    while queue:
+        path = queue.pop(0)
+        if path == start:
+            node = path
+            path = [path]
+        else:
+            node = path[-1]
+        for n in set(ug.neighbours[node]) - set(path):
+            if n == end:
+                paths.append(path + [n])
+                break
+            queue.append(path + [n])
+
+    return paths
+
+
 '''
 #test
 G = UGraph()
@@ -34,5 +57,7 @@ G.addNeighbours(2,3)
 G.addNeighbours(3,4)
 G.addNeighbours(1,5)
 G.addNeighbours(5,6)
+G.addNeighbours(4,6)
 print(bfs(G,0))
+print(bfs_p(G,0,6))
 '''
