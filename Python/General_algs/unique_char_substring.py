@@ -1,3 +1,11 @@
+################# THIS DOES NOT WORK ##########################
+
+################# NEEDS FIXING ################################
+
+###############################################################
+
+###############################################################
+
 def lenLongestSubstring(strn):
     '''
     This function takes as input a string s and returns the longest substring whose characters are unique.
