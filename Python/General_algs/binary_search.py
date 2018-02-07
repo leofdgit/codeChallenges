@@ -11,7 +11,6 @@ def binarySearch(array, item):
         return (item == array[0])
     mid = (a+1) //2
     midval = array[mid]
-    print(midval)
     if midval == item:
         return True
     p1, p2 = array[:mid], array[mid+1:]
