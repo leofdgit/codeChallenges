@@ -4,14 +4,12 @@ def palnum(n):
      This function does not use string methods.
      '''
     temp=n
-    rev=0
+    reverse=0
     while(n>0):
-        print(n)
-        print(rev)
         dig = n % 10
-        rev = rev*10 + dig
+        rev = reverse*10 + dig
         n = n // 10
-    if(temp==rev):
+    if(temp==reverse):
         return True
     else:
         return False
