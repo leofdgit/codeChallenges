@@ -1,4 +1,4 @@
-class TrieNode(): #testbranchedit
+class TrieNode(): #testbranchedits
     '''
     Basic implementation of a Trie. The children array contains pairs, the first argument being the letter represented by
     the node and the second argument being the node instance itself.
