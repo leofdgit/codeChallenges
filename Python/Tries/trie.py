@@ -1,4 +1,4 @@
-class TrieNode():
+class TrieNode(): #testbranchedit
     '''
     Basic implementation of a Trie. The children array contains pairs, the first argument being the letter represented by
     the node and the second argument being the node instance itself.
@@ -6,7 +6,7 @@ class TrieNode():
     def __init__(self):
         self.children = dict() #will contain pairs (i,TrieNode()).
         self.isEnd = False
-        
+
 def addWord(root,word):
     '''
     Given a trie's root node, word is added to the trie.
